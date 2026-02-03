@@ -1,6 +1,6 @@
 module middlewareApi
 
-go 1.22.0
+go 1.25.6
 
 require (
 	github.com/alexedwards/scs/v2 v2.9.0
