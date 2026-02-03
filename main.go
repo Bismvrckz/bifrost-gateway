@@ -37,8 +37,8 @@ func main() {
 	)
 
 	// Start the server
-	utils.Info("API Gateway Start | PORT:8081")
-	err := http.ListenAndServe(":8081", corsHandler(utils.SessionManager.LoadAndSave(mux)))
+	utils.Info("API Gateway Start | PORT:" + utils.AppPort)
+	err := http.ListenAndServe(":"+utils.AppPort, corsHandler(utils.SessionManager.LoadAndSave(mux)))
 	if err != nil {
 		utils.Fatal("Server failed to start: %v", err)
 	}

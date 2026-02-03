@@ -13,6 +13,7 @@ var (
 	DatabasePass = GetEnv("DB_MIDDLEWARE_PASS", "SRsUgEwKi7cL84VnuxP8pGyfzzvtkJ1LRqEIfQBarl+gW6m6Y22rXed4Ras=")
 	DatabaseName = GetEnv("DB_MIDDLEWARE_NAME", "DB_MID_REKON")
 	AesEncKey    = GetEnv("AES_ENC_KEY", "VAUNkTWRJlCOnXKPNhpU1w==")
+	AppPort      = GetEnv("PORT", "8081")
 )
 
 func GetEnv(key, fallback string) string {
